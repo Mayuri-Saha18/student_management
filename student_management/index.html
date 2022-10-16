@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #links{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 1%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #links>div{
+            display: flex;
+
+        }
+        #links a{
+            text-decoration: none;
+            font-size: 20px;
+            color: blue;
+        }
+        form{
+            width: 400px;
+            margin: auto;
+            margin-top: 10px;
+            padding: 3%;
+            background: white;
+            border: 1px solid grey;
+        }
+        #submit{
+            width: 70%;
+            margin: auto;
+            background-color: aqua;
+            color: black;
+            border: none;
+            border-radius: 15px;
+        
+        }
+        input{
+            display: block;
+            margin: 15px 0px;
+            font-size: 20px;
+            padding: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="links">
+        <div> <a href="index.html">Home</a></div>
+       <div> <a href="dashboard.html">Dashboard</a></div>
+    
+    </div>
+    
+    <div id="navbar"></div>
+   
+    <form id="students_data" onsubmit="storing(event)">
+        <h1>All Students Data</h1>
+        <input type="text" id="name" placeholder="Name"/>
+        <input type="text" id="course" placeholder="Course"/>
+        <input type="number" id="unit" placeholder="Unit"/>
+        <input type="text" id="image" placeholder="Image"/>
+        <input type="number" id="batch" placeholder="FT-web-Batch"/>
+        <input id="submit" type="submit"/>
+    </form>
+</body>
+</html>
+<script src="index.js"></script>
